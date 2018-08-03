@@ -7,5 +7,5 @@ from .serializers import TaskSerializer
 
 class TaskView(viewsets.ModelViewSet):
     #Pre standar methods in APIs: Get, Put, Delete
-    queryset = Task.objects.all() #how do i get info from the db
+    queryset = Task.objects.all() #Gets all Task objects from the db
     serializer_class = TaskSerializer
